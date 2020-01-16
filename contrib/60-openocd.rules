@@ -13,6 +13,9 @@ SUBSYSTEM!="usb|tty|hidraw", GOTO="openocd_rules_end"
 # opendous and estick
 ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="204f", MODE="660", GROUP="plugdev", TAG+="uaccess"
 
+# Atmel ICE Debugger
+ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2141", MODE="664", GROUP="plugdev", TAG+="uaccess"
+
 # Original FT232/FT245 VID:PID
 ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", MODE="660", GROUP="plugdev", TAG+="uaccess"
 
